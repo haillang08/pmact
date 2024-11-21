@@ -1,749 +1,597 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- Meta Tags -->
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-    <!-- Author -->
-    <meta name="author" content="Themes Industry">
-    <!-- description -->
-    <meta name="description" content="Robin is a highly creative, modern, visually stunning and Bootstrap responsive multipurpose studio and portfolio HTML5 template with 8 ready home page demos.">
-    <!-- keywords -->
-    <meta name="keywords" content="Creative, modern, clean, bootstrap responsive, html5, css3, portfolio, blog, studio, templates, multipurpose, one page, corporate, start-up, studio, branding, designer, freelancer, carousel, parallax, photography, studio, masonry, grid, faq">
-    <!-- Page Title -->
-    <title>Resume | Robin. HTML5 Template</title>
-    <!-- Favicon -->
-    
-    <!-- Bundle -->
-    <link href="static/css/bundle.min.css" rel="stylesheet">
-    <!-- Plugin Css -->
-    <link href="static/css/LineIcons.min.css" rel="stylesheet">
-    <link href="static/css/revolution-settings.min.css" rel="stylesheet">
-    <link href="static/css/jquery.fancybox.min.css" rel="stylesheet">
-    <link href="static/css/owl.carousel.min.css" rel="stylesheet">
-    <link href="static/css/cubeportfolio.min.css" rel="stylesheet">
-    <!-- Style Sheet -->
-    <link href="static/css/style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <link rel="shortcut icon" href="static/picture/logo.png" type="image/x-icon">
+    <title>CACP & ACP</title>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.min.css">
+     <link rel="stylesheet" href="static/css/animation.css">
+    <link rel="stylesheet" href="static/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="static/css/magnific-popup.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <!-- google icon -->
+    <link rel="stylesheet" href="static/css/css2-MaterialSymbolsOutlinedopszwghtFILLGRAD4840000.css">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="90">
+<body>
 
-<!-- Preloader -->
-<div class="preloader">
-    <div class="centrize full-width">
-        <div class="vertical-center">
-            <div class="spinner">
-                <div class="double-bounce1"></div>
-                <div class="double-bounce2"></div>
+    <!-- Preloader -->
+    <div id="pre_loader"></div>
+
+    <!--header-section start-->
+    <header class="header_area">
+        <div class="header_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav class="navbar navbar-expand-lg" id="#navbar">
+                            <img src="static/picture/logo.png" class="logo" alt="logo" width="75" height="30">
+                            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbar-content">
+                                <ul class="navbar-nav mx-auto mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link home active" href=""><center>首页</center><p><center>Home</center></p></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link about" href="#sales"><center>销售信息</center><p><center>Sales</center></p></a>
+                                    </li> 
+                                    <li class="nav-item">
+                                        <a class="nav-link service" href="#manufacture"><center>生产制造</center><p><center>manufacture</center></p></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link protfolio" href="#supply"><center>供应链</center><p><center>supply</center></p></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link review" href="#products"><center>产品资料</center><p><center>
+                                        products</center></p></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link review" href="data.html"><center>资料下料</center><p><center>
+                                        data download</center></p></a>
+                                    </li>
+
+
+                                </ul> 
+                                <div class="nav_right">
+                                  <div class="bag_icon"> </div>
+                                    <form method="POST" autocomplete="off" id="nav_search" class="nav_search_box">
+                                        <div class="in-box between_gap_20">
+                                            <input type="text" class="form-control" placeholder="Search">
+                                            <button type="submit" class="nav_search_icon"> <i class="fa-solid fa-magnifying-glass"></i></button>
+                                        </div>
+                                    </form>
+                              </div>
+                          </div>
+                        </nav>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- Preloader End -->
+        <div class="header_bottom d-none d-lg-flex">
+            <div class="container">
+                <div class="row">
+                    <div class="space_between">
+                        <div class="social between_part">
+                            <img src="static/picture/RAL.JPG" class="logo" alt="logo" width="110" height="10">
+							  <p class="mb_8 hero_content"> 如果有任何问题，请立即联系小编解决、修正。<br>If you have any questions, please contact me immediately.</br></p>
+							
+							
+							
+                        </div>
+                        <div class="address between_part">
+                            <div class="align_gap10"> </div>
+                            <div class="align_gap10">
+                                <span class="material-symbols-outlined"> phone_in_talk </span>
+                                <a href="tel:+123-456-789">+8610086</a>
+								<input type="datetime-local" id="current-time-input">
+<script>
+  var currentTime = new Date();
+  var year = currentTime.getFullYear();
+  var month = (currentTime.getMonth() + 1).toString().padStart(2, '0');
+  var date = currentTime.getDate().toString().padStart(2, '0');
+  var hour = currentTime.getHours().toString().padStart(2, '0');
+  var minute = currentTime.getMinutes().toString().padStart(2, '0');
 
-<!--Header Start-->
-<header>
+  var defaultValue = year + '-' + month + '-' + date + 'T' + hour + ':' + minute;
+  document.getElementById("current-time-input").value = defaultValue;
+</script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+   </header>
+    <!-- header-section end -->
 
-    <!--Navigation-->
-    <nav class="navbar navbar-top-default navbar-expand-lg navbar-simple nav-line">
+    <!-- Hero Section Start -->
+    <section class="hero_section" id="home">
+        <div class="swiper hero_swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="static/picture/hero_big_img.png" alt="slider">
+                </div>
+                <div class="swiper-slide">
+                    <img src="static/picture/CLAD.jpg" alt="slider">
+                </div>
+                <div class="swiper-slide">
+                    <img src="static/picture/CACP1.jpg" alt="slider">
+                </div>
+                <div class="swiper-slide">
+                    <img src="static/picture/hero_big_img4.png" alt="slider">
+                </div>
+            </div>
+        </div>
+         <div class="hero_text">
+            <h1 class="mb_20 hero_ch hero_title">Strategy Of Success Through Quality</h1>
+            <p class="mb_40 hero_content">以质取胜</p>
+      <a href="#" class="btn_theme">Professional</a></div>
+        
+        <div class="swiper_pagination_hero"></div>
+    </section>
+    <!-- Hero Section End -->
+       
+    <!-- Power Saving Start -->
+ 
+    <!-- Power Saving End -->
+  
+    <!-- About Us Start -->
+    <section class="about_section section_pt section_large_pb auto_active" id="sales">
         <div class="container">
-            <a href="#home" title="Logo" class="logo scroll">
-                <!--Logo Default-->
-                <img src="static/picture/logo.png" alt="logo" class="logo-dark">
-            </a>
-
-            <!--Nav Links-->
-            <div class="collapse navbar-collapse" id="Robin">
-                <div class="navbar-nav ml-auto">
-                    <a class="nav-link active scroll" href="#home">Home</a>
-                    <a class="nav-link scroll" href="#about">About</a>
-                    <a class="nav-link scroll" href="#services">Skills</a>
-                    <a class="nav-link scroll" href="#portfolio">Job-History</a>
-                    <a class="nav-link scroll" href="#client">Education</a>
-                    <a class="nav-link scroll" href="#blog">Project</a>
-                    <a class="nav-link scroll" href="#contact">Contact</a>
-                </div>
-            </div>
-
-            <!--Side Menu Button-->
-            <a href="javascript:void(0)" class="sidemenu_btn" id="sidemenu_toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
-
-        </div>
-    </nav>
-
-    <!--Side Nav-->
-    <div class="side-menu hidden">
-        <div class="inner-wrapper">
-            <span class="btn-close" id="btn_sideNavClose"><i></i><i></i></span>
-            <nav class="side-nav w-100">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link scroll" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link scroll" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link scroll" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link scroll" href="#portfolio">Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link scroll" href="#client">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link scroll" href="#blog">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <div class="side-footer text-white w-100">
-                <ul class="social-icons-simple">
-                    <li><a class="facebook-text-hvr" href="javascript:void(0)"><i class="fab fa-facebook-f"></i> </a> </li>
-                    <li><a class="instagram-text-hvr" href="javascript:void(0)"><i class="fab fa-instagram"></i> </a> </li>
-                    <li><a class="twitter-text-hvr" href="javascript:void(0)"><i class="fab fa-twitter"></i> </a> </li>
-                </ul>
-                
-            </div>
-        </div>
-    </div>
-    <a id="close_side_menu" href="javascript:void(0);"></a>
-    <!-- End side menu -->
-
-</header>
-<!--Header End-->
-
-<!--Home Start-->
-<section id="home" class="home-banner">
-    <div class="container">
-        <div class="row align-items-lg-center">
-            <div class="col-lg-7">
-                <!-- Box Area -->
-                <div class="heading-box">
-                    <h2>曹<span class="main-color">海平</span> PM</h2>
-                    <p>制造业从业经验二十年，一步一个脚印，扎根基层工作。 <span class="main-color">历经</span> 仓储、供应		链和生产计划的工作，参加过IATF16949汽车行业管理体系培训，有ISO企业内审员资格，掌握IE、QC手法等工具参考工作。</p>
-                    <a href="javascript:void(0);" class="btn btn-large btn-rounded btn-transparent-black mt-2">Learn More</a>
-                </div>
-            </div>
-
-            <div class="col-lg-5">
-                <div class="slider-right">
-                    <img data-depth="0.05" src="static/picture/personal.jpg" alt="side-image" class="scene">
-                    <span data-depth="0.08" class="scene"></span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Shapes -->
-    <span class="shape-square"></span>
-    <span class="shape-triangle"></span>
-    <span class="shape-plus"></span>
-    <span class="shape-circle"></span>
-</section>
-<!--Home End-->
-
-<!--Section About-->
-<section id="about">
-    <div class="container">
-        <div class="row align-items-lg-center dot-box">
-
-            <!-- Heading Area-->
-            <div class="col-lg-6 order-lg-2">
-                <div class="heading-area pl-lg-4 p-0">
-                    <h6 class="sub-title main-color">Basic info about componay</h6>
-                    <h2 class="title">Digital Creator & Strategists</h2>
-                    <p class="paragraph">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
-                        <br><br>
-                        If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden the middle.</p>
-                </div>
-            </div>
-
-            <!-- Features Box-->
-            <div class="col-lg-6">
-                <div class="row d-flex align-items-lg-center">
-                    <div class="col-lg-6 order-lg-2 p-lg-0">
-                        <!-- Feature Item -->
-                        <div class="feature-item">
-                            <i class="lni-bitbucket  f-icon"></i>
-                            <h5 class="title">Development</h5>
-                            <p>Simply dummy text of the print and typesetting industry lorem Ipsum has been standard.</p>
-                            <a href="javascript:void(0);" class="lni-arrow-right r-icon"></a>
-                        </div>
-                        <!-- Feature Item -->
-                        <div class="feature-item">
-                            <i class="lni-cart-full f-icon"></i>
-                            <h5 class="title">App Design</h5>
-                            <p>Simply dummy text of the print and typesetting industry lorem Ipsum has been standard.</p>
-                            <a href="javascript:void(0);" class="lni-arrow-right r-icon"></a>
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="about_img_area">
+                        <img src="static/picture/7-17.jpg" alt="Image">
+                        <div class="exprience">
+                            <span class="heading_one">20</span>
+                            <p class="x_large_custom"><span class="xx_large_custom">Year</span> Of Exprience</p>
                         </div>
                     </div>
-                    <div class="col-lg-6 p-0">
-                        <!-- Feature Item -->
-                        <div class="feature-item">
-                            <i class="lni-graduation f-icon"></i>
-                            <h5 class="title">UI / UX Design</h5>
-                            <p>Simply dummy text of the print and typesetting industry lorem Ipsum has been standard.</p>
-                            <a href="javascript:void(0);" class="lni-arrow-right r-icon"></a>
+                </div>
+                <div class="col-lg-7 col-xl-6 offset-xl-1">
+                    <div class="about_text part_md_pt">
+                        <p><h4 style="color:orange"><marquee scrollamount = 6>订单信息</marquee></h1></p>
+					     <img src="static/picture/sales.png" alt="Image">
+                      	
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Us End -->
+
+    <!-- Company Start -->
+    <section class="company_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="countdown">
+                        <div class="part">
+                            <div class="countdown_img">
+                                <img src="static/picture/countdown_img.png" alt="Image">
+                            </div>
+                        </div>
+                        <div class="part">
+                            <div class="between_gap_20 mb_20">
+                                <img src="static/picture/countdown.png" alt="Image">
+                                <h3 class="custon_color"><span id="num1">150</span>+</h3>
+                            </div>
+                            <p class="x_large_custom">Project</p>
+                        </div>
+                        <div class="part">
+                            <div class="between_gap_20 mb_20">
+                                <img src="static/picture/countdown2.png" alt="Image">
+                                <h3 class="custon_color"><span id="num2">100</span>+</h3>
+                            </div>
+                            <p class="x_large_custom">Happy clients</p>
+                        </div>
+                        <div class="part">
+                            <div class="between_gap_20 mb_20">
+                                <img src="static/picture/countdown3.png" alt="Image">
+                                <h3 class="custon_color"><span id="num3">16</span></h3>
+                            </div>
+                            <p class="x_large_custom">Nations</p>
                         </div>
                     </div>
                 </div>
             </div>
-
-        </div>
-
-    </div>
-</section>
-<!--Section End-->
-
-<!--Parallax Start-->
-<section class="parallax bg-img1">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-sm-6">
-                <div class="parallax-box text-white">
-                    <i class="fa fa-check" aria-hidden="true"></i>
-                    <h2 class="count">1800</h2>
-                    <h5>Project Completed</h5>
+            <div class="row section_padding"> 
+                <div class="col-lg-5">
+                    <p class="x_large_custom custon_color mb_20">CACP</p>
+                    <h2 class="mb_20">We are the best collaborator.</h2>
+                    <p class="mb_40">Hard work always pays off, and we will grow stronger together. Believe in yourself and believe that all difficulties can be overcome. Sunshine always comes after the rainbow.</p>
                 </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="parallax-box text-white">
-                    <i class="fa fa-flag" aria-hidden="true"></i>
-                    <h2 class="count">125</h2>
-                    <h5>Total Countries</h5>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="parallax-box text-white">
-                    <i class="fa fa-globe" aria-hidden="true"></i>
-                    <h2 class="count">5500</h2>
-                    <h5>Users Worldwide</h5>
-                </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
-                <div class="parallax-box text-white">
-                    <i class="fa fa-gift" aria-hidden="true"></i>
-                    <h2 class="count">17</h2>
-                    <h5>Award Winners</h5>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--Parallax End-->
-
-<!--Services Start-->
-<section id="services">
-    <div class="container">
-        <div class="row align-items-lg-center">
-            <!-- Features Box-->
-            <div class="col-lg-5 pr-lg-5">
-                <div class="heading-area">
-                    <h6 class="sub-title main-color">20+ Year Of Experience</h6>
-                    <h2 class="title m-0">My Statistical Analysis & Skills</h2>
-                </div>
-                <!-- Progress Bar -->
-                <ul class="services-skill text-left">
-                    <!--Progress Item-->
-                    <li class="progress-item">
-                        <h6>Development<span class="float-right"><b class="count">80</b>%</span></h6>
-                        <div class="progress">
-                            <span class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></span>
-                        </div>
-                    </li>
-                    <!--Progress Item-->
-                    <li class="progress-item">
-                        <h6>Development<span class="float-right"><b class="count">80</b>%</span></h6>
-                        <div class="progress">
-                            <span class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></span>
-                        </div>
-                    </li>
-                    <!--Progress Item-->
-                    <li class="progress-item">
-                        <h6>Web Design<span class="float-right"><b class="count">75</b>%</span></h6>
-                        <div class="progress">
-                            <span class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></span>
-                        </div>
-                    </li>
-                    <!--Progress Item-->
-                    <li class="progress-item">
-                        <h6>UI / UX Design<span class="float-right"><b class="count">75</b>%</span></h6>
-                        <div class="progress">
-                            <span class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></span>
-                        </div>
-                    </li>
-                </ul>
-
-                <!--Counters Area-->
-                <div class="counter-area">
-                    <!-- Counter Item-->
-                    <div class="counters">
-                        <i class="lni-apartment c-icon"></i>
-                        <!-- Content -->
-                        <div class="content">
-                            <h4 class="m-0"><span class="count">35</span>M</h4>
-                            <p>Customer</p>
-                        </div>
-                    </div>
-                    <!-- Counter Item-->
-                    <div class="counters">
-                        <i class="lni-calculator c-icon"></i>
-                        <!-- Content -->
-                        <div class="content">
-                            <h4 class="m-0"><span class="count">70</span>K</h4>
-                            <p>Projects</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- Heading Area-->
-            <div class="col-lg-7">
-                <div class="services-about">
-                    <img class="service-image" src="static/picture/service-image.jpg" alt="image">
-                    <div class="content">
-                        <p>Any desktop publishing packages and web page is a editors now use Lorem Ipsum as their default model text, and a search for their infancy.
-                            <br><br>
-                            any desktop publishing packages and web page editors now use.</p>
-
-                        <h5 class="mb-1">Harry Watson</h5>
-                        <span>CEO, Abacus Studio</span>
+                <div class="col-lg-7 col-xl-6 offset-xl-1">
+                    <div class="img_gallery">
+                        <a href="static/picture/company.png" class="popup_img tall">
+                            <img src="static/picture/company.png" class="img_effect" alt="Image">
+                        </a>
+                        <a href="static/picture/company2.png" class="popup_img">
+                            <img src="static/picture/company2.png" alt="Image">
+                        </a>
+                        <a href="static/picture/company3.png" class="popup_img">
+                            <img src="static/picture/company3.png" alt="Image">
+                        </a>
                     </div>
                 </div>
             </div>
-
         </div>
-    </div>
-</section>
-<!--Services End-->
+    </section>
+    <!-- Company End -->
 
-<!--Portfolio Start-->
-<section id="portfolio" class="bg-light cube-portfolio1 p-0">
-    <div class="container">
-        <!--Heading-->
-        <div class="row wow fadeIn">
-            <div class="heading-area my-5 text-center w-100">
-                <h6 class="sub-title">Basic info about componay</h6>
-                <h2 class="title m-0">Creative Work</h2>
-           </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-lg-12">
-
-            <!--Portfolio Items-->
-            <div id="js-grid-mosaic-flat" class="cbp cbp-l-grid-mosaic-flat">
-
-                <div class="cbp-item web-design graphic">
-                    <a href="static/picture/work-1.jpg" class="cbp-caption cbp-lightbox">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="static/picture/work-1.jpg" alt="port-1">
+    <!-- Service Section Start -->
+    <section class="service_section section_padding auto_active" id="manufacture">
+        <div class="container">
+            <div class="row ">
+                <div class="text-center mb_60">
+                    <p class="x_large_custom custon_color mb_20">生产制造</p>
+                    
+                </div>
+                <div class="service grid_part_4">
+                    <div class="card">
+                        <div class="card_img">
+                            <img src="static/picture/manufacture.png" alt="Image">
                         </div>
-                        <div class="cbp-caption-activeWrap"></div>
-                        <div class="cbp-l-caption-alignCenter center-block">
-                            <div class="cbp-l-caption-body">
-                                <div class="plus"></div>
-                                <h5 class="text-white mb-1">Latest Work</h5>
-                                <p class="text-white">See Our Amazing Work</p>
+                        <div class="card-body">
+                            <div class="between_gap_20 mb_20">
+                                <div class="img_icon">
+                                    <img src="static/picture/service_icon.png" alt="Icon">
+                                </div>
+                                <h5>商业应用</h5>
                             </div>
+                            <a href="#" class="read_more align_gap10">See Details <span class="material-symbols-outlined"> arrow_right_alt </span></a>
                         </div>
-
-                    </a>
-                </div>
-                <div class="cbp-item seo marketing">
-                    <a href="static/picture/work-2.jpg" class="cbp-caption cbp-lightbox">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="static/picture/work-2.jpg" alt="port-2">
-                        </div>
-                        <div class="cbp-caption-activeWrap"></div>
-                        <div class="cbp-l-caption-alignCenter center-block">
-                            <div class="cbp-l-caption-body">
-                                <div class="plus"></div>
-                                <h5 class="text-white mb-1">Latest Work</h5>
-                                <p class="text-white">See Our Amazing Work</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="cbp-item seo marketing">
-                    <a href="static/picture/work-4.jpg" class="cbp-caption cbp-lightbox">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="static/picture/work-4.jpg" alt="port-4">
-                        </div>
-                        <div class="cbp-caption-activeWrap"></div>
-                        <div class="cbp-l-caption-alignCenter center-block">
-                            <div class="cbp-l-caption-body">
-                                <div class="plus"></div>
-                                <h5 class="text-white mb-1">Latest Work</h5>
-                                <p class="text-white">See Our Amazing Work</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="cbp-item graphic seo marketing">
-                    <a href="static/picture/work-3.jpg" class="cbp-caption cbp-lightbox">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="static/picture/work-3.jpg" alt="port-3">
-                        </div>
-                        <div class="cbp-caption-activeWrap"></div>
-                        <div class="cbp-l-caption-alignCenter center-block">
-                            <div class="cbp-l-caption-body">
-                                <div class="plus"></div>
-                                <h5 class="text-white mb-1">Latest Work</h5>
-                                <p class="text-white">See Our Amazing Work</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="cbp-item web-design graphic">
-                    <a href="static/picture/work-5.jpg" class="cbp-caption cbp-lightbox">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="static/picture/work-5.jpg" alt="port-5">
-                        </div>
-                        <div class="cbp-caption-activeWrap"></div>
-                        <div class="cbp-l-caption-alignCenter center-block">
-                            <div class="cbp-l-caption-body">
-                                <div class="plus"></div>
-                                <h5 class="text-white mb-1">Latest Work</h5>
-                                <p class="text-white">See Our Amazing Work</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="cbp-item seo marketing graphic ">
-                    <a href="static/picture/work-6.jpg" class="cbp-caption cbp-lightbox">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="static/picture/work-6.jpg" alt="port-6">
-                        </div>
-                        <div class="cbp-caption-activeWrap"></div>
-                        <div class="cbp-l-caption-alignCenter center-block">
-                            <div class="cbp-l-caption-body">
-                                <div class="plus"></div>
-                                <h5 class="text-white mb-1">Latest Work</h5>
-                                <p class="text-white">See Our Amazing Work</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="cbp-item web-design seo">
-                    <a href="static/picture/work-7.jpg" class="cbp-caption cbp-lightbox">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="static/picture/work-7.jpg" alt="port-7">
-                        </div>
-                        <div class="cbp-caption-activeWrap"></div>
-                        <div class="cbp-l-caption-alignCenter center-block">
-                            <div class="cbp-l-caption-body">
-                                <div class="plus"></div>
-                                <h5 class="text-white mb-1">Latest Work</h5>
-                                <p class="text-white">See Our Amazing Work</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="cbp-item web-design graphic">
-                    <a href="static/picture/work-8.jpg" class="cbp-caption cbp-lightbox">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="static/picture/work-8.jpg" alt="port-8">
-                        </div>
-                        <div class="cbp-caption-activeWrap"></div>
-                        <div class="cbp-l-caption-alignCenter center-block">
-                            <div class="cbp-l-caption-body">
-                                <div class="plus"></div>
-                                <h5 class="text-white mb-1">Latest Work</h5>
-                                <p class="text-white">See Our Amazing Work</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="cbp-item seo marketing">
-                    <a href="static/picture/work-10.jpg" class="cbp-caption cbp-lightbox">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="static/picture/work-10.jpg" alt="port-2">
-                        </div>
-                        <div class="cbp-caption-activeWrap"></div>
-                        <div class="cbp-l-caption-alignCenter center-block">
-                            <div class="cbp-l-caption-body">
-                                <div class="plus"></div>
-                                <h5 class="text-white mb-1">Latest Work</h5>
-                                <p class="text-white">See Our Amazing Work</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="cbp-item seo marketing">
-                    <a href="static/picture/work-11.jpg" class="cbp-caption cbp-lightbox">
-                        <div class="cbp-caption-defaultWrap">
-                            <img src="static/picture/work-11.jpg" alt="port-2">
-                        </div>
-                        <div class="cbp-caption-activeWrap"></div>
-                        <div class="cbp-l-caption-alignCenter center-block">
-                            <div class="cbp-l-caption-body">
-                                <div class="plus"></div>
-                                <h5 class="text-white mb-1">Latest Work</h5>
-                                <p class="text-white">See Our Amazing Work</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-</section>
-<!--Portfolio end-->
-
-<!--Client Start-->
-<section id="client">
-    <div class="container">
-        <div class="row d-flex align-content-lg-center min-height-100vh">
-
-            <!-- Features Box-->
-            <div class="col-lg-4 pr-lg-5 p-0">
-                <div class="heading-area">
-                    <h6 class="sub-title main-color">What Client Says About us</h6>
-                    <h2 class="title">Our Clients & Reviews</h2>
-                    <p class="paragraph">There are many variations of passages of Lorem Ipsum available, but the majority.</p>
-                </div>
-                <div id="client-nav"></div>
-            </div>
-
-            <!-- Client Area-->
-            <div class="col-lg-8">
-                <div id="owl-client" class="owl-carousel owl-theme">
-                    <!--Items-->
-                    <div class="client-box">
-                        <i class="lni-quotation q-icon"></i>
-                        <p>There are many variations of passages of Lorem Ipsum availa  ble, but the majority There are many variations of passages of Lorem Ipsum availa  ble.</p>
-
-                        <div class="client-img">
-                            <img src="static/picture/avatar-1.png" alt="client">
-                        </div>
-                        <h5 class="client-name mb-0">Harley Klien</h5>
-                        <span class="client-designation">CEO, Abacus Inc</span>
-
                     </div>
-                    <!--Items-->
-                    <div class="client-box">
-                        <i class="lni-quotation q-icon"></i>
-                        <p>There are many variations of passages of Lorem Ipsum availa  ble, but the majority There are many variations of passages of Lorem Ipsum availa  ble.</p>
-
-                        <div class="client-img">
-                            <img src="static/picture/avatar-2.png" alt="client">
+                    <div class="card">
+                        <div class="card_img">
+                            <img src="static/picture/manufacture2.png" alt="Image">
                         </div>
-                        <h5 class="client-name mb-0">David Jhon</h5>
-                        <span class="client-designation">Marketing Lead</span>
-
+                        <div class="card-body">
+                            <div class="between_gap_20 mb_20">
+                                <div class="img_icon">
+                                    <img src="static/picture/service_icon2.png" alt="Icon">
+                                </div>
+                                <h5>家庭装修</h5>
+                            </div>
+                            <a href="#" class="read_more align_gap10">See Details <span class="material-symbols-outlined"> arrow_right_alt </span></a>
+                        </div>
                     </div>
-                    <!--Items-->
-                    <div class="client-box">
-                        <i class="lni-quotation q-icon"></i>
-                        <p>There are many variations of passages of Lorem Ipsum availa  ble, but the majority There are many variations of passages of Lorem Ipsum availa  ble.</p>
-
-                        <div class="client-img">
-                            <img src="static/picture/avatar-3.png" alt="client">
+                    <div class="card">
+                        <div class="card_img">
+                            <img src="static/picture/manufacture3.png" alt="Image">
                         </div>
-                        <h5 class="client-name mb-0">Jhon Walkin</h5>
-                        <span class="client-designation">General Manager</span>
-
+                        <div class="card-body">
+                            <div class="between_gap_20 mb_20">
+                                <div class="img_icon">
+                                    <img src="static/picture/service_icon3.png" alt="Icon">
+                                </div>
+                                <h5>品质检验</h5>
+                            </div>
+                            <a href="#" class="read_more align_gap10">See Details <span class="material-symbols-outlined"> arrow_right_alt </span></a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card_img">
+                            <img src="static/picture/manufacture4.png" alt="Image">
+                        </div>
+                        <div class="card-body">
+                            <div class="between_gap_20 mb_20">
+                                <div class="img_icon">
+                                    <img src="static/picture/service_icon4.png" alt="Icon">
+                                </div>
+                                <h5>老化测试</h5>
+                            </div>
+                            <a href="#" class="read_more align_gap10">See Details <span class="material-symbols-outlined"> arrow_right_alt </span></a>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <!-- Service Section End -->
+  
+    <!-- power_saving_banner Start -->
+   
+    <!-- power_saving_banner End -->
+    <!-- Protfolio Start -->
+   
 
-            <!--Partner Slider-->
-            <div class="owl-carousel partners-slider">
-                <div class="logo-item"> <img alt="client-logo" src="static/picture/client-1.png"></div>
-                <div class="logo-item"> <img alt="client-logo" src="static/picture/client-1.png"></div>
-                <div class="logo-item"> <img alt="client-logo" src="static/picture/client-1.png"></div>
-                <div class="logo-item"> <img alt="client-logo" src="static/picture/client-1.png"></div>
-
+    <!-- Client Company Section Start -->
+    <div class="client_company_section">
+        <!-- Swiper -->
+        <div class="swiper client_company py_80">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="static/picture/logo2.png" alt="Client Logo" width="80" height="40">
+                </div>
+                <div class="swiper-slide">
+                    <img src="static/picture/logo2.png" alt="Client Logo" width="80" height="40">
+                </div>
+                <div class="swiper-slide">
+                    <img src="static/picture/logo2.png" alt="Client Logo" width="80" height="40">
+                </div>
+                <div class="swiper-slide">
+                    <img src="static/picture/logo2.png" alt="Client Logo" width="80" height="40">
+                </div>
+                <div class="swiper-slide">
+                    <img src="static/picture/logo2.png" alt="Client Logo" width="80" height="40">
+                </div>
+                <div class="swiper-slide">
+                   <img src="static/picture/logo2.png" alt="Client Logo" width="80" height="40">
+                </div>
+                <div class="swiper-slide">
+                    <img src="static/picture/logo2.png" alt="Client Logo" width="80" height="40">
+                </div>
+                <div class="swiper-slide">
+                   <img src="static/picture/logo2.png" alt="Client Logo" width="80" height="40">
+                </div>
+				<div class="swiper-slide">
+                   <img src="static/picture/logo2.png" alt="Client Logo" width="80" height="40">
+                </div>
             </div>
-
         </div>
     </div>
-</section>
-<!--Client End-->
+    <!-- Client Company Section End -->
+ <section class="protfolio_section section_padding auto_active" id="supply"> 
+ <div class="row">
+                       <a href="#" class="read_more align_gap10">回到主页面 <span class="material-symbols-outlined"> arrow_right_alt </span></a>
+                        </div>
+    </section>
+    <!-- Protfolio End -->
 
-<!--Blog Start-->
-<section id="blog" class="bg-light p-0">
-    <div class="container-fluid">
+    <!-- Company Section Start -->
+    <section class="company_section_managemant">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                 
 
-        <div class="row align-items-center">
-            <div class="col-lg-6 order-lg-2">
-                <!--Blog Content-->
-                <div class="heading-area px-lg-3 text-center">
-                    <h6 class="sub-title main-color">January 14, 2019</h6>
-                    <h2 class="title">Living Your Dreams</h2>
-                    <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodt temp to the incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis a nostr a exercitation ullamco laboris nisi ut aliquip.</p>
-                    <a href="blog-list.html" class="btn btn-large btn-rounded btn-blue mt-2">Read More</a>
+                    <div class="saving_banner mb_40">
+                      <p class="x_large_custom custon_color mb_20">CACP供应链</p>
+                      <h2>Best Service For Your Dream.</h2>
+                    </div>
+                    <div class="management">
+                        <div class="gap20">
+                            <div class="img_icon">
+                                <img src="static/picture/service_icon.png" alt="Icon">
+                            </div>
+                            <div class="text">
+                                <h5 class="mb_10">Managemant</h5>
+                                <p class="fs-6">......</p>
+                            </div>
+                        </div>
+                        <div class="gap20">
+                            <div class="img_icon">
+                                <img src="static/picture/service_icon.png" alt="Icon">
+                            </div>
+                            <div class="text">
+                                <h5 class="mb_10">Project</h5>
+                                <p class="fs-6">......</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn_theme mt_60">Contact Us</a>
+                </div>
+                <div class="offset-lg-1 col-lg-5">
+                    <div class="company_img">
+                        <img src="static/picture/company_img.png" alt="Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Company Section End -->
+      
+    <!-- Review Section Start -->
+    <section class="product_section section_padding auto_active" id="products">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="space_between mb_60 align-items-end">
+                        <div class="saving_banner">
+                            <p class="x_large_custom custon_color mb_20">Products</p>
+                            <h2>Preview of our products</h2>
+                        </div>
+                        <div class="navigate">
+                            <div class="swiper-button-next">
+                                <i class="fa-solid fa-arrow-right-long"></i>
+                            </div>
+                            <div class="swiper-button-prev">
+                                <i class="fa-solid fa-arrow-left-long"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Swiper -->
+                    <div class="swiper client_review_swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="part">
+                                    <div class="between_gap_20 mb_20">
+                                        <img src="static/picture/review.png" class="author" alt="image">
+                                        <div class="review_head">
+                                            <h5 class="mb_16">Metal Series</h5>
+											<h8 class="mb_16">Recommendation rate</h5>
+                                            <div class="star_review">
+                                                <i class="fa-solid fa-star star_active"></i>
+                                                <i class="fa-solid fa-star star_active"></i>
+                                                <i class="fa-solid fa-star star_active"></i>
+                                                <i class="fa-solid fa-star star_active"></i>
+                                                <i class="fa-solid fa-star star_active"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="part">
+                                    <div class="between_gap_20 mb_20">
+                                        <img src="static/picture/review2.png" class="author" alt="image">
+                                        <div class="review_head">
+                                            <h5 class="mb_16">Plain color series</h5>
+											<h8 class="mb_16">Recommendation rate</h5>
+                                            <div class="star_review">
+                                                <i class="fa-solid fa-star star_active"></i>
+                                                <i class="fa-solid fa-star star_active"></i>
+                                                <i class="fa-solid fa-star star_active"></i>
+                                                <i class="fa-solid fa-star star_active"></i>
+                                                <i class="fa-solid fa-star star_active"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="part">
+                                    <div class="between_gap_20 mb_20">
+                                        <img src="static/picture/review3.png" class="author" alt="image">
+                                        <div class="review_head">
+                                            <h5 class="mb_16"> Wood series</h5>
+											<h8 class="mb_16">Recommendation rate</h5>
+                                            <div class="star_review">
+                                                <i class="fa-solid fa-star star_active"></i>
+                                                <i class="fa-solid fa-star star_active"></i>
+                                                <i class="fa-solid fa-star star_active"></i>
+                                                <i class="fa-solid fa-star star_active"></i>
+                                                <i class="fa-solid fa-star star_active"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="part">
+                                    <div class="between_gap_20 mb_20">
+                                        <img src="static/picture/review4.png" class="author" alt="image">
+                                        <div class="review_head">
+                                            <h5 class="mb_16">Stone pattern series</h5>
+											<h8 class="mb_16">Recommendation rate</h5>
+                                            <div class="star_review">
+                                                <i class="fa-solid fa-star star_active"></i>
+                                                <i class="fa-solid fa-star star_active"></i>
+                                                <i class="fa-solid fa-star star_active"></i>
+                                                <i class="fa-solid fa-star star_active"></i>
+                                                <i class="fa-solid fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+							>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Review Section End -->
+    
+    <!-- Bottom_subscribe_area Start -->
+    <div class="bottom_subscribe_area">
+        <div class="subscribe mx-auto position_relative">
+            
+					
+                    
+                </div>
+                <span id="subscribeMsg"></span> 
+            </form>
+        </div>
+    </div>
+    <!-- Bottom_subscribe_area End -->
+
+    <!-- Footer Area Start -->
+    <section class="footer_area">
+        <div class="container">
+            <div class="row section_padding gy-5">
+                <div class="col-sm-6 col-md-4">
+                    <div class="company">
+                      <img src="static/picture/bottom.png" alt="logo" width="200" height="20" class="mb_200">
+                        
+                    </div>
+                </div> 
+                <div class="col-sm-5 col-md-3 offset-sm-1 offset-md-1">
+                    <div class="footer_menu">
+                        <h4 class="mb_40 footer_title">CACP</h4>
+                        <ul class="menu_items">
+                            <li><a href="#">Company Address</a></li>
+                            
+                           
+                        </ul>
+                    </div>
+                </div> 
+                <div class="col-sm-6 col-md-4">
+                    <div class="footer_contact">
+                      <h4 class="mb_40 footer_title">UAE</h4>
+                      
+                        <div class="between_gap_20 mb_30">
+                            <span class="material-symbols-outlined"> location_on </span>
+                            <p>No.199 Industrial street Avenue999 Al Ain Abu Dhabi UAE</p>
+                        </div>
+                        
                   </div>
+                </div> 
             </div>
-            <div class="col-lg-6 p-0">
-                <!--Blog Image-->
-                <div class="blog-half-image wow hover-effect fadeInRight">
-                    <img src="static/picture/split-blog.jpg" alt="image">
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-<!--Blog End-->
-
-<!--Contact Start-->
-<section id="contact">
-    <div class="container">
-        <div class="row align-items-lg-center">
-            <!--Form area-->
-            <div class="col-lg-6 pr-lg-5">
-                <div class="heading-area">
-                    <h6 class="sub-title main-color">Have any Question ?</h6>
-                    <h2 class="title">Let's Get In Touch</h2>
-                </div>
-                <!--Contact Form-->
-                <form class="contact-form" id="contact-form-data">
-                    <div id="result"></div>
-
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <input class="form-control" type="text" placeholder="Name" required="" id="your_name" name="userName">
-                            </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <div class="form-group">
-                                <input class="form-control" type="email" placeholder="Email" required="" id="your_email" name="userEmail">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="form-group">
-                        <input class="form-control" type="text" placeholder="Subject" required="" id="your_subject" name="userSubject">
-                    </div>
-
-                    <div class="form-group">
-                        <textarea class="form-control" placeholder="Message" id="message" name="userMessage"></textarea>
-                    </div>
-
-                    <!--Button-->
-                    <a href="javascript:void(0);" id="submit_btn" class="contact_btn btn btn-large btn-rounded btn-blue d-block mt-4">Send Message</a>
-
-                </form>
-
-                <!-- Address -->
-                <ul class="address-item">
-                    <!--item-->
-                    <li class="w-100 mb-4">
-                        <i class="lni-apartment main-color"></i>
-                        <div class="content">
-                            <h6 class="main-color m-0">Address</h6>
-                            <p>Come visit us: 123 New Street, Our City , Australia.</p>
-                        </div>
-                    </li>
-                    <!--item-->
-                    <li class="pr-2">
-                        <i class="lni-comment-reply main-color"></i>
-                        <div class="content">
-                            <h6 class="main-color m-0">Email:</h6>
-                            <p><a href="mailto:email@website.co">email@website.com</a></p>
-                        </div>
-                    </li>
-                    <!--item-->
-                    <li>
-                        <i class="lni-phone-handset main-color"></i>
-                        <div class="content">
-                            <h6 class="main-color m-0">Address</h6>
-                            <p><a href="tel:002343474383">002 343474383</a></p>
-                        </div>
-                    </li>
-
-                </ul>
-
-            </div>
-
-            <!--map area-->
-            <div class="col-lg-6">
-                <div class="map-half bg-map" id="map"></div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--Contact End-->
-
-<!--Footer Start-->
-<footer class="footer-style-1 bg-light">
-    <div class="container">
-        <div class="row align-items-center">
-            <!--Social-->
-            <div class="col-lg-6">
-                <div class="footer-social text-lg-left">
-                    <ul class="list-unstyled">
-                        <li><a class="wow fadeInUp" href="javascript:void(0);"><i aria-hidden="true" class="fab fa-facebook-f"></i></a></li>
-                        <li><a class="wow fadeInDown" href="javascript:void(0);"><i aria-hidden="true" class="fab fa-twitter"></i></a></li>
-                        <li><a class="wow fadeInUp" href="javascript:void(0);"><i aria-hidden="true" class="fab fa-google-plus-g"></i></a></li>
-                        <li><a class="wow fadeInDown" href="javascript:void(0);"><i aria-hidden="true" class="fab fa-linkedin-in"></i></a></li>
-                        <li><a class="wow fadeInUp" href="javascript:void(0);"><i aria-hidden="true" class="fab fa-instagram"></i></a></li>
-                        <li><a class="wow fadeInDown" href="javascript:void(0);"><i aria-hidden="true" class="fab fa-pinterest-p"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-            <!--Text-->
-            <div class="col-lg-6 text-lg-right">
-                <p class="company-about fadeIn">The template reference from &copy; 2022.Company name All rights reserved.
-                </p>
-            </div>
-        </div>
-    </div>
-</footer>
-<!--Footer End-->
-
-<!--Scroll Top Start-->
-<span class="scroll-top-arrow"><i class="fas fa-angle-up"></i></span>
-<!--Scroll Top End-->
-
-<!-- JavaScript -->
-<script src="static/js/bundle.min.js"></script>
-<!-- Plugin Js -->
-<script src="static/js/jquery.appear.js"></script>
-<script src="static/js/jquery.fancybox.min.js"></script>
-<script src="static/js/owl.carousel.min.js"></script>
-<script src="static/js/parallaxie.min.js"></script>
-<script src="static/js/wow.min.js"></script>
-<script src="static/js/jquery.cubeportfolio.min.js"></script>
-<!-- REVOLUTION JS FILES -->
-<script src="static/js/jquery.themepunch.tools.min.js"></script>
-<script src="static/js/jquery.themepunch.revolution.min.js"></script>
-<!-- SLIDER REVOLUTION EXTENSIONS -->
-<script src="static/js/revolution.extension.actions.min.js"></script>
-<script src="static/js/revolution.extension.carousel.min.js"></script>
-<script src="static/js/revolution.extension.kenburn.min.js"></script>
-<script src="static/js/revolution.extension.layeranimation.min.js"></script>
-<script src="static/js/revolution.extension.migration.min.js"></script>
-<script src="static/js/revolution.extension.migration.min.js"></script>
-<script src="static/js/revolution.extension.parallax.min.js"></script>
-<script src="static/js/revolution.extension.slideanims.min.js"></script>
-<script src="static/js/revolution.extension.video.min.js"></script>
-<!-- google map-->
-<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJRG4KqGVNvAPY4UcVDLcLNXMXk2ktNfY"></script> -->
-<script src="static/js/map.js"></script>
-
-<!--contact form-->
-<script src="static/js/contact_us.js"></script>
-
-<!-- custom script-->
-<script src="static/js/script.js"></script>
-
+            <div class="row">
+                <div class="footer_bottom small py_30">
+                     <p class="copyright">Copyright@2024This page is maked by Robin, source code reference from the Internet. <a target="_blank" ;</a></p>
+                     <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Visitor Counter</title>
+    <script>
+        // 定义一个全局变量来存储访问次数
+        let visitorCount = 0;
+ 
+        // 当文档加载完成时，增加访问次数并更新界面
+        function updateVisitorCount() {
+            // 从localStorage获取访问次数，如果不存在则初始化为0
+            if (localStorage.getItem('visitorCount')) {
+                visitorCount = parseInt(localStorage.getItem('visitorCount'));
+            }
+            // 增加访问次数
+            visitorCount++;
+            // 存储访问次数到localStorage
+            localStorage.setItem('visitorCount', visitorCount);
+            // 更新界面显示的访问次数
+            document.getElementById('visitorCount').textContent = visitorCount;
+        }
+    </script>
+</head>
+<body onload="updateVisitorCount()">
+    <h6>您是第 <span id="visitorCount">加载中...</span> 位访客！</h6>
 </body>
+</html>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Area End -->
+    
+    <a href="#" class="scrollToTop"><i class="fas fa-angle-double-up"></i></a>
+
+    <!-- Script -->
+     <script data-cfasync="false" src="static/js/email-decode.min.js"></script><script src="static/js/jquery.min.js"></script> 
+    <!-- plugins -->
+    <script src="static/js/swiper-bundle.min.js"></script>
+    <!-- bootstrap -->
+    <script src="static/js/countMe.min.js"></script> 
+    <script src="static/js/jquery.magnific-popup.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    <!-- custom -->
+    <script src="static/js/custom.js"></script>
+</body>
+
 </html>
